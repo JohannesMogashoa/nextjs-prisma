@@ -17,5 +17,6 @@ export default NextAuth({
         error: '/auth/error',
         newUser: '/auth/new-user'
     },
-    debug: true
+    debug: true,
+    secret: process.env.SECRET as string
 })
